@@ -2,9 +2,9 @@
 const fs = require('fs');
 const path = require('path');
 class Reader{
-    static ReadJsonFile(ruta){
-        const file = fs.readFileSync(path.resolve(__dirname, '../'+ruta), 'utf8');
-        return JSON.parse(file);
+    static ReadJsonFile(path){
+        const rawdata = fs.readFileSync(path);
+        return JSON.parse(rawdata);
     }
 }
 module.exports = Reader;
