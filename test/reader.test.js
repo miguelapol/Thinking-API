@@ -1,4 +1,4 @@
-const Reader = require("../app/utils/Reader");
+const Reader = require("./../app/utils/Reader");
 const path = require('path');
 // const file = fs.readFileSync(path.resolve(__dirname, '../'+ruta), 'utf8');
 describe("Pruebas de unidad", function() {
