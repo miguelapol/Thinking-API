@@ -1,4 +1,4 @@
-const Reader = require("./../app/utils");
+const Reader = require("./../app/utils/Reader");
 const path = require("path");
 const students = Reader.ReadJsonFile(path.resolve(__dirname,"../test/data/studentest.json"));
 
