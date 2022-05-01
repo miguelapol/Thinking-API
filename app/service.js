@@ -10,16 +10,16 @@ app.get("/", (request, response) => {
 
 app.get("/v1/students/users",(request, response) => {
     response.json(thinking.userThinking());
-})
+});
 //mostrar los certificados
 app.get("/v1/students/certifications",(request, response) => {
     response.json(thinking.certificationThinking());    
-})
+});
 //mostrar los creditos
 app.get("/v1/students/credits",(request, response) => {
     response.json(thinking.creditsThinking());    
-})
+});
 
 app.listen(port, () => {
     console.log(`Thinking API in localhost:${port}`);
-})
+});
